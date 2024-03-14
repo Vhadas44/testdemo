@@ -4,7 +4,7 @@ on: push
 jobs:
   build-image:
     name: Build Docker image to Docker Hub
-    runs-on: alphine-latest
+    runs-on: ubuntu-latest
     steps:
       - name: check out the repo
         uses: actions/checkout@v3
