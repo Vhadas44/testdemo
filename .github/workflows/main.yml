@@ -16,8 +16,8 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build and push Docker image
-        uses: docker/build-push-action@v4
+        uses: docker/build-pull-action@v4
         with:
-          context: DockerFileFolder
+          context: vhadas44/testdemo
           push: true
           tags: vhadas44/testdemo:latest
